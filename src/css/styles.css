@@ -7,14 +7,89 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #c1d3fe;
   color: #212121;
   line-height: 1.5;
+  margin: 0px;
 }
 
 #search-box {
   font: inherit;
-  padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+
+.container {
+  min-height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: #edf2fb;
+}
+
+.component {
+  width: 75rem;
+  height: 40rem;
+  border-radius: 3rem;
+  box-shadow: 0.8rem 0.8rem 1.4rem #808080, -0.2rem -0.2rem 1.8rem #fff;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #d7e3fc;
+}
+
+.form-input {
+  margin: 0 2rem;
+  width: 50rem;
+  height: 5rem;
+  padding: 8px;
+  border: none;
+  border-radius: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem #808080,
+    inset -0.2rem -0.2rem 0.5rem #fff;
+  background: none;
+  font-family: inherit;
+  color: #3f88c5;
+}
+
+.form-input::placeholder {
+  color: black;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0.3rem 0.3rem 0.6rem #808080, -0.2rem -0.2rem 0.5rem #fff;
+}
+
+.country-list {
+  list-style: none;
+}
+
+.list-item {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.item-img {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.country-info {
+  width: 35rem;
+  height: 30rem;
+  border-radius: 3rem;
+  box-shadow: 0.8rem 0.8rem 1.4rem #808080, -0.2rem -0.2rem 1.8rem #fff;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #d7e3fc;
 }
